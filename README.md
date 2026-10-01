@@ -3,7 +3,7 @@
 A simple Command-Line Interface (CLI) chatbot powered by the Groq API and Llama 3.1. This project demonstrates fundamental API interactions, conversation memory, and prompt engineering.
 
 ## Features
-- Integrates with Groq LLM (`llama-3.1-8b-instant`).
+- Integrates with Groq LLM (`llama3-8b-8192`).
 - CLI interface with a continuous chat loop.
 - Conversation memory (retains context of earlier messages).
 - Selectable system prompts/personas.
