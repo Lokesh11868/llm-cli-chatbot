@@ -121,6 +121,9 @@ def main():
             print(f"{Fore.RED}Groq API Error: {e}{Style.RESET_ALL}")
             # Remove the last user message so it doesn't break history format on retry
             messages.pop()
+        except KeyboardInterrupt:
+            print(f"\n{Fore.CYAN}Session interrupted by user. Goodbye!{Style.RESET_ALL}")
+            break
         except Exception as e:
             print(f"{Fore.RED}An unexpected error occurred: {e}{Style.RESET_ALL}")
             break
@@ -129,8 +132,4 @@ def main():
     save_conversation(messages)
 
 if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        print(f"\n{Fore.CYAN}Session interrupted by user. Goodbye!{Style.RESET_ALL}")
-        sys.exit(0)
+    main()
