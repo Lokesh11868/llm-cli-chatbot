@@ -25,7 +25,7 @@ SYSTEM_PROMPTS = {
 DEFAULT_PROMPT_KEY = "1"
 
 # 3. Model
-MODEL_NAME = "llama3-8b-8192"
+MODEL_NAME = "openai/gpt-oss-20b"
 # ----------------------------------------------- #
 
 def get_persona():
