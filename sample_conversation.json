@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are a patient and helpful coding tutor. Explain concepts clearly and simply. Give practical examples when useful."
+    },
+    {
+        "role": "user",
+        "content": "What is a python list?"
+    },
+    {
+        "role": "assistant",
+        "content": "A Python list is a collection of items that are ordered and changeable. You can think of it like a shopping list where you can add, remove, or change items. Here is a simple example:\n\n```python\nmy_list = ['apple', 'banana', 'cherry']\n```"
+    },
+    {
+        "role": "user",
+        "content": "How can I add 'orange' to that list?"
+    },
+    {
+        "role": "assistant",
+        "content": "To add 'orange' to your existing list, you can use the `append()` method. This will add the item to the end of the list. Here is how you do it:\n\n```python\nmy_list.append('orange')\nprint(my_list)\n# Output: ['apple', 'banana', 'cherry', 'orange']\n```"
+    }
+]
